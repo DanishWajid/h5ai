@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #333;
+  font: 14px Sans-Serif;
+  padding: 50px;
+  background: #eee;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 0 12px 0;
+  margin: 0;
+}
+h2 {
+  font-size: 16px;
+  text-align: center;
+  padding: 0 0 12px 0;
+}
+
+#container {
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
+  position: relative;
+  background: white;
+}
+
+table {
+  background-color: #f3f3f3;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 15px 0;
+}
+
+th {
+  background-color: #fe4902;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+th small {
+  font-size: 9px;
+}
+
+td,
+th {
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
+
+td a {
+  color: #663300;
+  display: block;
+  padding: 5px 10px;
+}
+th a {
+  padding-left: 0;
+}
+
+td:first-of-type a {
+  background: url(./.images/file.png) no-repeat 10px 50%;
+  padding-left: 35px;
+}
+th:first-of-type {
+  padding-left: 35px;
+}
+
+td:not(:first-of-type) a {
+  background-image: none !important;
+}
+
+tr:nth-of-type(odd) {
+  background-color: #e6e6e6;
+}
+
+tr:hover td {
+  background-color: #cacaca;
+}
+
+tr:hover td a {
+  color: #000;
+}
+
+/* icons for file types (icons by famfamfam) */
+
+/* images */
+table tr td:first-of-type a[id$="jpg"],
+table tr td:first-of-type a[id$="png"],
+table tr td:first-of-type a[id$="gif"],
+table tr td:first-of-type a[id$="svg"],
+table tr td:first-of-type a[id$="jpeg"] {
+  background-image: url(./images/image.png);
+}
+
+/* zips */
+table tr td:first-of-type a[id$="zip"] {
+  background-image: url(/images/zip.png);
+}
+
+/* css */
+table tr td:first-of-type a[id$=".css"] {
+  background-image: url(./images/css.png);
+}
+
+/* docs */
+table tr td:first-of-type a[id$="doc"],
+table tr td:first-of-type a[id$="docx"],
+table tr td:first-of-type a[id$="ppt"],
+table tr td:first-of-type a[id$="pptx"],
+table tr td:first-of-type a[id$="pps"],
+table tr td:first-of-type a[id$="ppsx"],
+table tr td:first-of-type a[id$="xls"],
+table tr td:first-of-type a[id$="xlsx"] {
+  background-image: url(./images/office.png);
+}
+
+/* videos */
+table tr td:first-of-type a[id$="avi"],
+table tr td:first-of-type a[id$="wmv"],
+table tr td:first-of-type a[id$="mp4"],
+table tr td:first-of-type a[id$="mov"],
+table tr td:first-of-type a[id$="m4a"] {
+  background-image: url(./images/video.png);
+}
+
+/* audio */
+table tr td:first-of-type a[id$="mp3"],
+table tr td:first-of-type a[id$="ogg"],
+table tr td:first-of-type a[id$="aac"],
+table tr td:first-of-type a[id$="wma"] {
+  background-image: url(./images/audio.png);
+}
+
+/* web pages */
+table tr td:first-of-type a[id$="html"],
+table tr td:first-of-type a[id$="htm"],
+table tr td:first-of-type a[id$="xml"] {
+  background-image: url(./images/xml.png);
+}
+
+table tr td:first-of-type a[id$="php"] {
+  background-image: url(./images/php.png);
+}
+
+table tr td:first-of-type a[id$="js"] {
+  background-image: url(./images/script.png);
+}
+
+/* directories */
+table tr.dir td:first-of-type a {
+  background-image: url(./images/folder.png);
+}
+
+table tr td:first-of-type a {
+  background-image: url(./images/file.png);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.search {
+  margin-bottom: 20px;
+}
+form.search input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #ffffff;
+}
+
+form.search input[type="text"]:focus {
+  border: 1px solid #fe4902;
+}
+
+form.search input[type="submit"] {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #ea4601;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.search button:hover {
+  background: #fe4902;
+}
+
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
